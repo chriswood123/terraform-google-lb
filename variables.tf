@@ -44,7 +44,7 @@ variable "name" {
 }
 
 variable "service_port" {
-  type        = number
+  type        = string
   description = "TCP port your service is listening on."
 }
 
