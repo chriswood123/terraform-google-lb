@@ -48,6 +48,11 @@ variable "service_port" {
   description = "TCP port your service is listening on."
 }
 
+variable "health_check_port" {
+  type        = number
+  description = "TCP port your to check health of your service."
+}
+
 variable "target_tags" {
   description = "List of target tags to allow traffic using firewall rule."
   type        = list(string)

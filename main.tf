@@ -38,7 +38,7 @@ resource "google_compute_http_health_check" "default" {
   project      = var.project
   name         = "${var.name}-hc"
   request_path = "/"
-  port         = var.service_port
+  port         = var.health_check_port
 }
 
 resource "google_compute_firewall" "default-lb-fw" {
